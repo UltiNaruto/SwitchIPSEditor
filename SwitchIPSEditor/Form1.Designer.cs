@@ -190,6 +190,7 @@
             this.table_ips_viewer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.table_ips_viewer.Size = new System.Drawing.Size(794, 412);
             this.table_ips_viewer.TabIndex = 4;
+            this.table_ips_viewer.Visible = false;
             // 
             // tab_manager
             // 
@@ -199,7 +200,6 @@
             this.tab_manager.SelectedIndex = 0;
             this.tab_manager.Size = new System.Drawing.Size(756, 406);
             this.tab_manager.TabIndex = 5;
-            this.tab_manager.Visible = false;
             // 
             // table_ips_viewer_commands
             // 

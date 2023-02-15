@@ -217,6 +217,7 @@ namespace SwitchIPSEditor
                             }
                         };
                         tab_manager.AddTab(Path.GetFileName(ofd.FileName), Path.GetFullPath(ofd.FileName), listView);
+                        table_ips_viewer.Visible = true;
                         UpdateListViewColumns();
                         UpdateButtons();
                         UpdateStatusBar();
@@ -273,6 +274,8 @@ namespace SwitchIPSEditor
             if (tab_manager.SelectedIndex != -1)
             {
                 tab_manager.RemoveTab(txt_box_status_bar.Text);
+                if (tab_manager.TabCount <= 0)
+                    table_ips_viewer.Visible = false;
                 UpdateListViewColumns();
                 UpdateButtons();
                 UpdateStatusBar();

@@ -12,8 +12,6 @@ namespace SwitchIPSEditor
             var match = default(Match);
             var originalTabName = tabName;
 
-            tabControl.Visible = true;
-
             if (tabControl.HasTab(originalTabName))
             {
                 if (tabControl.HasTabWithExtendedName(extendedTabName))
@@ -71,7 +69,6 @@ namespace SwitchIPSEditor
             if (ExtendedNames[tabControl].Count <= 0)
             {
                 ExtendedNames.Remove(tabControl);
-                tabControl.Visible = false;
             }
         }
 
